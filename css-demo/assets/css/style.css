@@ -1,0 +1,158 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ---------------Responsive Images----------------- */
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ---------------Utility Classes----------------- */
+
+.container{
+  width:80vw;
+  margin: 40px auto;
+  max-width:960px;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+    line-height:1.4;
+  background-color: #F2F2F2;
+}
+header.primary {
+  background-color: #1B3059;
+  text-align: center;
+  color: #F2F2F2;
+  text-shadow: 2px 2px #000000;
+  padding: 20px 40px;
+}
+
+header.primary h1 {
+  font-size: 2.9rem;
+  margin: 20px 0;
+}
+
+header.primary h1 a {
+  color: #B4D99A;
+  text-decoration: none;
+}
+
+header.primary h2 {
+  font-size: 1.8rem;
+  /* Top | Left/Right | Bottom */
+  margin: 20px auto 40px;
+}
+
+header.primary nav {
+  width: 80vw;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+header.primary nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header.primary nav ul li {
+  list-style-type: none;
+}
+header.primary nav ul li a {
+  color: #F2F2F2;
+  text-decoration: none;
+  background-color: rgba( 24, 34, 64, 0.6);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: #394D73;
+  color: #B4D99A;
+}
+
+#intro{
+  border-bottom: 2px dotted #394D73;
+  padding-bottom:1rem;
+}
+
+#intro h2{
+  color: #182240;
+}
+
+#intro p{
+  color: #182240;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  color:#1B3059;
+   border-bottom: 2px dotted #394D73;
+  padding-bottom:1rem;
+}
+
+#content h2 a {
+  color: #1B3059;
+  text-decoration: none;
+  background-color: rgba( 180, 217,	154, 0.6);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+#content h2 a:hover,
+#content h2 a:active {
+  background-color: #F2F2F2;
+  color: #182240;
+}
+  
+ .widget {
+  color: #1B3059;
+} 
+.widget h2 {
+  color:#182240;
+}
+
+@media screen and (max-width:700px) {
+  header.primary nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+  }
+  
+  header.primary nav li {
+    margin-bottom:20px;
+  }
+  
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+}  
+  
+
+/*  
+  Color Swatches in Hex
+.STARSHIP-darkest { color: #182240; }
+.STARSHIP-navy { color: #1B3059; }
+.STARSHIP-blue { color: #394D73; }
+.STARSHIP-green { color: #B4D99A; }
+.STARSHIP-white { color: #F2F2F2; }
+
+  */

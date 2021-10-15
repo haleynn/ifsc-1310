@@ -1,0 +1,59 @@
+/* Color Theme Swatches in Hex */
+.purple { color: #887BA6; }
+.lavendar { color: #D6C9F2; }
+.yellow { color: #F2E5A0; }
+.white { color: #F2F0EB; }
+.coral { color: #F28379; }
+
+html {
+    height: 100%;  /*makes the gradient stretch to the bottom*/
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-image: linear-gradient(180deg, #D6C9F2, #887BA6);
+    background-repeat: no-repeat;
+}
+h1, h2 {
+    color: #F28379;
+}
+
+ul {
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul li {
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #887BA6;
+    background-color: rgba( 242, 229, 160, 0.8);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+ul li a:hover,
+ul li a:active {
+  background-color:#F28379 ;
+  color: #F2F0EB;
+}
+
+@media screen and (max-width: 700px){
+    ul {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+  }
+  ul li {
+      margin-bottom:20px;
+  }
+}
+
+
+
+
