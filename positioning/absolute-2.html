@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Positioning Lab</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #ECECEC;
+	font-weight: bold;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #FFF;
+	text-align: center;
+	line-height: 24px;
+}
+#wrapper {
+	background-color: #FFF;
+	border-width: 20px;
+	border-style: solid;
+	width: 760px;
+	height: 760px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#red {
+	background-color: #900;
+	width:175px;
+	height:175px;
+	position: relative;
+	left: -20px;
+	top: -20px;
+}
+#green {
+	background-color: #090;
+	width:175px;
+	height:175px;
+	position:relative;
+	right: -605px;
+	top: -195px;
+}
+#blue {
+	background-color: #00F;
+	width:175px;
+	height:175px;
+	position: relative;
+	left: -20px;
+	bottom: -255px;
+}
+#purple {
+	background-color: #63C;
+	width:175px;
+	height:175px;
+	position: relative;
+	right: -605px;
+	bottom: -80px;
+}
+#footer {
+	background-color: #666;
+	width:175px;
+	height:175px;
+	position: relative;
+	right:-295px;
+	top: -400px;
+	
+}
+h1 {
+	color: #000;
+	font-weight: normal;
+	padding: 50px;
+}
+</style>
+</head>
+
+<body>
+<h1>Absolute 2</h1>
+<div id="wrapper">
+  <div id="red">Red</div>
+  <div id="green">Green</div>
+  <div id="blue">Blue</div>
+  <div id="purple">Purple</div>
+  <div id="footer">Footer</div>
+</div>
+</body>
+</html>
