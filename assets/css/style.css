@@ -8,12 +8,18 @@
 html {
     height: 100%;  /*makes the gradient stretch to the bottom*/
 }
+
 body {
     font-family: 'Roboto Mono', monospace;
     background-image: linear-gradient(180deg, #D6C9F2, #887BA6);
 }
+
 h1, h2 {
     color: #F28379;
+}
+
+h3 {
+    color:#F2F0EB;
 }
 
 ul {
@@ -24,6 +30,7 @@ ul {
     justify-content: space-around;
     align-content: space-around;
 }
+
 ul li {
     list-style-type: none;
 }
