@@ -23,6 +23,7 @@ img{
   max-width:960px;
 }
 
+
 body {
   font-family: 'Roboto Mono', monospace;
   margin: 0;
@@ -147,12 +148,10 @@ header.primary nav a:active {
 }  
   
 
-/*  
-  Color Swatches in Hex
+/*  Color Swatches in Hex
 .STARSHIP-darkest { color: #182240; }
 .STARSHIP-navy { color: #1B3059; }
 .STARSHIP-blue { color: #394D73; }
 .STARSHIP-green { color: #B4D99A; }
 .STARSHIP-white { color: #F2F2F2; }
-
-  */
+*/

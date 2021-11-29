@@ -1,0 +1,357 @@
+/* TODO 
+-add depth range in colors (borders, effects, glow, etc)
+-add outside media (videos photos LOGO) >> gather and format media
+-validate forms
+-finish about.html
+
+
+
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  color:white;
+  background-color: #171A26;
+  margin: 0;
+  line-height:1.4;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+footer a, .main-content a {
+    color: #F4CB89;
+    text-decoration: none;
+}
+
+footer a:hover, .main-content a:hover, 
+footer a:visited, .main-content a:visited{
+    color: #cc1234;
+}
+header.primary {
+    background-image: url("../img/segway_moving.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #171A26;
+}
+.primary #heading {
+    width: 936px;
+    text-align: left;
+    text-indent: inherit;
+    margin: auto;
+}
+.primary #heading a, .primary #heading h3 {
+    margin-left: 20px;
+    color:#cc1234;
+    text-shadow: 1px 1px#6B0C22;
+    text-decoration: none;
+}
+#content .main-content {
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #f4cb89 ;
+    padding: 20px;
+    margin: 20px;
+}
+#content .main-content img {
+    background-color: #fcf8f0;
+    padding: 4px;
+    border-radius: 6px;
+    border-color: white;
+    max-width: 100%;
+}
+/*nav*/
+header.primary h3, header.primary h2 {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+    
+}
+header.primary nav {
+  width: 80vw;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+header.primary nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header.primary nav ul li {
+  list-style-type: none;
+  margin: 16px;
+}
+header.primary nav ul li a {
+  color: white;
+  text-decoration: none;
+  background-color: #F4CB89;
+  padding: 8px 16px;
+  border-radius: 10px;
+  box-shadow: 1px 1px white;
+  transition: 0.5s;
+}
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: #d9042b;
+  box-shadow: 1px 1px#6B0C22;
+}
+
+
+/* card on index.html */
+.front h3{
+  width: 40%;
+  height: 500px;
+  margin: auto;
+  margin-top: 40px;
+  
+}
+.front img {
+    border-radius:6px;
+    border-style: inset;
+    max-width: 80%;
+    max-height: 60%;
+    flex: 50%;
+    align-self: flex-end;
+    margin: 20px;
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+#features .container h2 {
+    margin-left: 40px;
+}
+.container #cards {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.feature-card {
+ background-color: transparent;
+  width: 430px;
+  height: 380px;
+  margin: 20px auto;
+}
+
+/*container to position child elements */
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.85s;
+  transform-style: preserve-3d;  /* keeps both faces on card instead of mirroring the front when flipped */
+}
+.feature-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+/* position front and back*/
+.front, .back {
+  background-color: #cc1234;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 6px;
+  -webkit-backface-visibility: hidden; /*Safari (CSS Documentation*/
+  backface-visibility: hidden;
+}
+
+/* front + back style */
+.front {
+  box-shadow: 6px 4px #6B0C22;
+  
+}
+.back {
+  transform: rotateY(180deg);
+  align-items: center;
+}
+.back ul{
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+.back ul li, .back p{
+  font-size: 80%;
+  width: 90%;
+  align-self: center;
+}
+
+
+
+ /* dropdown on faq.html */
+ .dropdown-container {
+    background-color: white;
+    width: 100%
+ }
+ .dropdowns {
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #F4CB89;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 936px;
+    
+ }
+ .dropdowns h2 {
+    color: #171A26;
+    text-align: center;
+ }
+ .dropdown-faq{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 936px;
+ }
+ .dropdownbtn{
+    background-color:#cc1234;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 6px 4px #6b0c22; 
+ }
+ .dropdownbtn:hover, .dropdownbtn:focus{
+    background-color: #6b0c22;
+    box-shadow: 0px 0px;
+ }
+ .dropdown-content{
+    background-color: #6b0c22;
+    min-width: 380px;
+    z-index: 1;
+    order:2;
+    padding: 12px 16px;
+    display: none;
+    margin: 20px;
+    border-radius: 6px;
+ }
+ .show{display:block;}
+ 
+ 
+ 
+ /*gallery layout */
+ #album-container .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+ }
+  #album-container .container h2 {
+    color:white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+ .album h3 {
+    margin-left: 40px;
+ }
+.image {
+    height: 140px;
+    width: fit-content; 
+    border-radius: 6px;
+    border-color: transparent;
+}
+.image img, .image a {
+    max-height: 100%;
+    width: auto;
+    border-radius: 6px;
+    border-color: transparent;
+    margin: auto;
+}
+div.image:hover {
+    border: 1px solid #F4CB89;
+}
+.gallery {
+    padding: 0 20px;
+    float: right;
+    width: 24.99999%;
+    flex: 0 1 auto;
+    justify-content: space-evenly;
+}
+.group.album, .album-1, .album-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+ footer a {
+    text-decoration: none;
+    color: #EBD47C;
+ }
+ #colophon{
+    border-top-color: #F4CB89;
+    border-top-style: solid;
+    border-top-width: thick;
+    text-align: center;
+ }
+ 
+ 
+ 
+@media screen and (min-width: 936px){
+    header.primary {
+        background-position: top;
+    }
+    .primary .heading {
+        width: 936px;
+        text-align: left;
+
+    }
+}
+@media screen and (max-width: 900px) {
+    .gallery {
+        width: 33%;
+        margin: 6px 0;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gallery {
+        width: 48%;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .gallery {
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px) {
+    header.primary nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content:space-around;
+    }
+}

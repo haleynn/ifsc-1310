@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Segway Centaur</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content = "Segway Centaur Vehicle"/>
+        <meta name="author" content = "Haley Naylor"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> 
+        
+    </head>
+    
+    <body>
+        <header role="banner" class = "primary">
+            <div id = "heading">
+            <h1><a href = "index.html">Segway Centaur</a></h1>
+            <h3> Simply Moving</h3>
+          </div>
+            <nav role = "navigation">
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li><a href = "faq.html">FAQ's</a></li>
+                </ul>
+            </nav>
+            <!--javascript for dropdown-->
+    <script src="assets/js/dropdown.js"></script>
+        </header>
+        
+        <section id = "content" class = "dropdown-container">
+            <div class = "dropdowns">
+            <h2> Frequently Asked Questions</h2>
+            <div class="dropdown-faq">
+                <a onclick="dropDown1()" class="dropdownbtn">How fast does it go?</a>
+                <div id = "dropdown-1" class="dropdown-content">
+                    <p>Concept Centaur prototypes have gone just over 20 miles per hour. If Concept Centaur were to be manufactured in the future, more testing would be required to determine the appropriate top speed.</p>
+                </div>
+            </div>
+            <div class="dropdown-faq">
+                <a onclick="dropDown2()" class="dropdownbtn">How much does it cost?</a>
+                <div id = "dropdown-2" class="dropdown-content">
+                    <p>Since Concept Centaur is just that—a concept—they aren't for sale. At the present time, Segway Inc. has no plans to manufacture or sell this as a product. </p>
+                </div>
+            </div>
+            <div class="dropdown-faq">
+                <a onclick="dropDown3()" class="dropdownbtn">When will it be available?</a>
+                <div id = "dropdown-3" class="dropdown-content">
+                    <p>At present time, Segway Inc. has no plans to manufacture the Centaur. All new Segway products will be posted to our website as they are released. If you'd like, you may send an e-mail to tswallace@ualr.edu and include your name, address, and phone number to be notified of any additional information on Concept Centaur. This address is not monitored by a person, so please do not send any other requests here.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id = "album-container">
+          <div class = "container">
+            <h2>Photo Gallery</h2>
+            <div class = "album">
+              <h3> CONCEPT AND PROTOTYPES</h3>
+              <div class = "group" >
+              <div id = "album-1">
+                  <div class = "gallery">
+                    <div class="image">
+                        <a target = "_blank" href = "assets/img/cprototype/centaur.jpg">
+                            <img src="assets/img/cprototype/centaur.jpg" alt = "prototype vehicle with orange accent on seat">
+                        </a>
+                      </div>
+                  </div>
+                  <div class = "gallery">
+                    <div class="image">
+                        <a target = "_blank" href = "assets/img/cprototype/centaur_2.jpg">
+                            <img src="assets/img/cprototype/centaur_2.jpg" alt = "prototype vehicle with green accent on bars">
+                        </a>
+                      </div>
+                  </div>
+                  <div class = "gallery">
+                    <div class="image">
+                        <a target = "_blank" href = "assets/img/cprototype/centaur_3.jpg">
+                            <img src="assets/img/cprototype/centaur_3.jpg" alt = "closeup of organge seat">
+                        </a>
+                      </div>
+                  </div>
+                  <div class = "gallery">
+                    <div class="image">
+                        <a target = "_blank" href = "assets/img/cprototype/centaur_4.jpg">
+                            <img src="assets/img/cprototype/centaur_4.jpg" alt = "prototype vehicle with red accent color on bars">
+                        </a>
+                      </div>
+                  </div>
+                  <div class = "gallery">
+                    <div class="image">
+                        <a target = "_blank" href = "assets/img/cprototype/centaur_5.jpg">
+                            <img src="assets/img/cprototype/centaur_5.jpg" alt = "closeup under seat of prototype with red bars">
+                        </a>
+                      </div>
+                  </div>
+              </div>
+              <div id = "album-2">
+                  <div class = "gallery">
+                    <div class="image">
+                        <a target = "_blank" href = "assets/img/cprototype/tech_1.jpg">
+                            <img src = "assets/img/cprototype/tech_1.jpg" alt = "shock absorbers underneath seat of the vehicle">
+                        </a>
+                      </div>
+                  </div>
+                  <div class = "gallery">
+                    <div class="image">
+                        <a target = "_blank" href = "assets/img/cprototype/tech_2.jpg">
+                            <img src = "assets/img/cprototype/tech_2.jpg" alt = "accompanying sensor technology on the vehicle, a small box with wires">
+                        </a>
+                      </div>
+                  </div>
+                  <div class = "gallery">
+                    <div class="image">
+                        <a target = "_blank" href = "assets/img/cprototype/centaur_sketch.jpg">
+                            <img src = "assets/img/cprototype/centaur_sketch.jpg" alt = "conceptual sketch for the Segway Centaur">
+                        </a>
+                      </div>
+                  </div>
+              </div>
+              </div>
+            </div>         
+            <div class = "album">
+              <h3> CENTAUR IN ACTION</h3>
+              <div id = "group">
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_5.jpg">
+                        <img src ="assets/img/cinmotion/centaur_5.jpg" alt = "Man standing on Centaur Vehicle looking back towards the ground.">
+                   </a>
+                  </div>
+              </div>
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_6.jpg">
+                        <img src ="assets/img/cinmotion/centaur_6.jpg" alt = "Man steering Centaur sharply to the left">
+                    </a>
+                  </div>
+              </div>
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_7.jpg">
+                        <img src ="assets/img/cinmotion/centaur_7.jpg" alt = "Man performing jump on vehicle going downhill">
+                    </a>
+                  </div>
+              </div>
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_8.jpg">
+                        <img src ="assets/img/cinmotion/centaur_8.jpg" alt = "Man going uphill on the Segway Centaur Concept vehicle">
+                    </a>
+                  </div>
+              </div>
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_9.jpg">
+                        <img src ="assets/img/cinmotion/centaur_9.jpg" alt = "a following shot of the vehicle being driven uphill">
+                    </a>
+                  </div>
+              </div>
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_10.jpg">
+                        <img src ="assets/img/cinmotion/centaur_10.jpg" alt = "a following shot of the vehicle being driven uphill">
+                    </a>
+                  </div>
+              </div>
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_11.jpg">
+                        <img src ="assets/img/cinmotion/centaur_11.jpg" alt = "a following shot of the vehicle being driven uphill">
+                    </a>
+                  </div>
+              </div>
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_12.jpg">
+                        <img src ="assets/img/cinmotion/centaur_12.jpg" alt = "man popping a wheelie (front tires in air) on the Centaur prototype">
+                    </a>
+                  </div>
+              </div>
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_13.jpg">
+                        <img src ="assets/img/cinmotion/centaur_13.jpg" alt = "man standing at top of a hill on the vehicle with both front wheels elevated (in segway position)">
+                    </a>
+                  </div>
+              </div>
+              <div class = "gallery">
+                <div class="image">
+                    <a target = "_blank" href = "assets/img/cinmotion/centaur_14.jpg">
+                        <img src ="assets/img/cinmotion/centaur_14.jpg" alt = "woman standing at top of a hill on the vehicle with both front wheels elevated (in segway position)">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <aside role = "complementary"></aside>
+        <footer id = "colophon" role = "contentinfo">
+            <h6>&copy; 2021 Segway Inc. | <a href = "mailto:orders@segway.com">contact us</a> | <a href=#top>Back to Top </a> </h6>
+        </footer>
+    </body>
+    
+</html>
