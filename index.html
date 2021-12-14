@@ -15,9 +15,11 @@
 </head>
 
 <body>
+  <div class = "heading">
   <h1>Haley Naylor</h1>
+  <div class = "title"><h2>IFSC-1310: Web Technologies Assignments</h2></div>
+  </div>
   <div class = "container">
-    <div class = "title"><h2>IFSC-1310: Web Technologies Assignments</h2></div>
     <div class = "content">
       <ul>
         <li><a href = "prototype/index.html">Prototype HTML5 Assignment</a></li>
@@ -27,6 +29,7 @@
         <li><a href = "positioning/absolute-1.html">Absolute-1 Positioning Assignment</a></li>
         <li><a href = "positioning/absolute-2.html">Absolute-2 Positioning Assignment</a></li>
         <li><a href="centaur/index.html">Segway Centaur</a> </li>
+        <li><a href="centaur-revised/index.html">Segway Centaur: Revised</a></li>
       </ul>
     </div>
   </div>
@@ -37,7 +40,38 @@
           <li><a href = "assets/img/flexboxfroggy.jpg"> Flexbox Froggy Assignment</a></li>
           <li><a href = "assets/img/graviticon.png"> Gravit Icon Assigntment</a></li>
           <li><a href = "assets/img/backgroundimageremoval.jpg">Background Image Removal Assignment</a></li>
+          <li><a href = "cycle/index.html">Cycle Image Lab</a></li>
         </ul>
+    </div>
+  </div>
+  <div class = "container">
+    <div class = "title"><h3>Thoughts on Progressive Enhancement:</h3></div>
+    <div class = "dropdown-content">
+      <p>Progressive Enhancement is an approach to website development that starts with and focuses on the content layer, marking up good semantic HTML.  Adding CSS/JavaScript(JS) features depends on device and browser compatibility. Feature detection is often used to determine whether a browser can handle more modern capabilities, according to 
+      <a target = "_blank" href = "https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement">MDN’s definition of Progressive Enhancement</a>. This creates a website that provides optimal performance gradually based on the user's device’s capabilities.
+          Graceful Degradation takes a somewhat backwards take on development. The best experience for users with the most advanced browsers is taken in consideration first; then testing in older browsers to correct the most impactful errors is done towards the end of the process. This perspective puts the most capable browsers in the foreground while merely providing a passable version of the site to users without that sort of access. This does not maintain maximum functionality or alternatives for most browsers beyond the most up-to-date.
+        Progressive Enhancement development allows a more well-rounded experience for users with less access to more advanced technologies: those that cannot handle running the code that would be used for the most immersive experience, either browsers, the physical device, or the connection to the internet. This gives the developers more opportunity to implement accessibility as a superior option offering alternatives, such as 
+        <a target = "_blank" href = "https://developer.mozilla.org/en-US/docs/Glossary/Polyfill">polyfills</a>-- which mimic functionality that can be provided by API’s, and catering to more browsers with varying levels of capability</p>
+    </div>
+  </div>
+  <div class = "container">
+    <div class = "title"><h3>Segway Centaur Project Revision and Reflection: </h3></div>
+    <div class = "dropdown-content">
+      <h4>Feedback: </h4>
+      <p>
+        I didn’t receive much feedback regarding making changes. It was mentioned that there were portions of the site that would look better with a border or slight change in background color. The main change that those I asked wanted to see was a better image gallery. This was something I wanted to change from the minute I turned in the first version of this site. The spacing was off because of how the CSS was set up which allowed for image overlap, that was the biggest issue. The recent cycle lab set me up with a great plan to revise.
+      </p>
+      <h4>Revision Experience: </h4>
+      <p>
+        The issues regarding the backgrounds and borders were very easy to revise. Trying to figure out what to do with the image gallery posed the biggest challenge. I tried making the two sections into accessible slick carousels, but for the life of me I could not figure out how to implement all of the code correctly. So that was a bust. I moved on to check and see about the JQuery Cycle plugin, which also didn’t work out since it could only display one image at a time and that would look ridiculous. I then resorted to just messing around with properties to get the images to resize depending on the viewport size and adjust the way the photos wrap. I ended up making slight changes to the spacing and the images grow and shrink slightly with the window size, but still not to where I wanted it. There is one display option I did not get to try that seemed like a good contender to the multi-slide slideshow: creating a responsive image grid. Ultimately I would like to go back and figure out how to do a multiple image carousel, which was my original intention for revising the gallery. Overall I am somewhat disappointed by how insignificant the changes to the site are, but it gives me motivation to go back and figure out the puzzles I’ve encountered.
+      </p>
+      <h4>Project and Course Experience: </h4>
+      <p>
+        I came into this course with previous experience that took place the summer before, so for most of it I didn’t need to delve as far into the content and practice as I think anyone new to the content would. There were things I struggled with --ahem flexbox-- where I would have to essentially test the properties until the output came out as desired. Dealing with the image manipulation and logo creation was really enjoyable. I found it easy spending a lot of time outlining the bear and lining up the ellipses for the Star Co. logo. I think focusing on the details was the easiest for me, personally. Figuring out topics that were very difficult, however, is extremely rewarding.
+This Segway Centaur project took more planning and thought than I gave it originally. Figuring out how I wanted to actually design the pages was the hardest part. I could not get myself to create a markup, which in hindsight, is exactly what I needed. It was also a trying experience to maintain my own workflow, there was a lot of bouncing back and forth between getting the content situated and styling it up. Filling in the content, generating the layout and starting the basic styling (fonts and element sizes) were the easiest. For some reason finding and sticking to a color theme was extremely difficult, at least until I found a good background picture. 
+From this point forward, when creating a site I think the most important and helpful step is laying it all out and completing each step before starting on another.
+
+      </p>
     </div>
   </div>
 <!--  This is for the possibility of using this site for a portfolio 

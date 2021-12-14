@@ -5,17 +5,22 @@
 .white { color: #F2F0EB; }
 .coral { color: #F28379; }
 
-html {
-    height: 100%;  /*makes the gradient stretch to the bottom*/
+html, body {
+    height: 100%; 
+
 }
 
 body {
     font-family: 'Roboto Mono', monospace;
-    background-image: linear-gradient(180deg, #D6C9F2, #887BA6);
+     background-image: linear-gradient(180deg, #D6C9F2, transparent );
+    background-color: #887BA6;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 h1, h2 {
     color: #F28379;
+    
 }
 
 h3 {
@@ -50,6 +55,17 @@ ul li a:hover,
 ul li a:active {
   background-color:#F28379 ;
   color: #F2F0EB;
+}
+.container.title{
+    
+}
+.dropdown-content{
+    font-size: 16px;
+    color:#887BA6;
+    margin: 0px 26px;
+    padding: 8px;
+    border-radius:6px;
+    background-color: rgba( 242, 229, 160, 0.8);
 }
 
 @media screen and (max-width: 700px){

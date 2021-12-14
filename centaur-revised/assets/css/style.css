@@ -142,6 +142,12 @@ header.primary nav a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: fit-content;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #f4cb89 ;
+    padding: 20px;
+    margin: 20px;
 }
 
 
@@ -210,7 +216,6 @@ header.primary nav a:active {
  /* dropdown on faq.html */
  .dropdown-container {
     
-    background-color: white;
     width: 100%
  }
  .dropdowns {
@@ -220,6 +225,7 @@ header.primary nav a:active {
     margin: 20px auto;
     padding: 30px;
     max-width: 936px;
+    background-color: white;
     
  }
  .dropdowns h2 {
@@ -266,6 +272,7 @@ header.primary nav a:active {
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
+    margin:auto;
  }
   #album-container .container h2 {
     color:white;
@@ -273,39 +280,35 @@ header.primary nav a:active {
     padding: 10px;
     width: 100%;
   }
- .album h3 {
-    margin-left: 40px;
- }
-.image {
-    height: 140px;
-    width: fit-content; 
+  
+  .gallery {
+      height: auto;
+      width: fit-content;
+      justify-content:space-evenly;
+  }
+  .image {
     border-radius: 6px;
-    border-color: transparent;
-}
-.image img, .image a {
-    max-height: 100%;
-    width: auto;
-    border-radius: 6px;
-    border-color: transparent;
-    margin: auto;
-}
-div.image:hover {
-    border: 1px solid #F4CB89;
-}
-.gallery {
-    padding: 0 20px;
-    float: right;
-    width: 24.99999%;
-    flex: 0 1 auto;
-    justify-content: space-evenly;
-}
-.group.album, .album-1, .album-2{
+    max-width: 230px;
+  }
+  .image img, .image a {
+      max-width: 100%;
+      border-radius: 6px;
+      border-color: transparent;
+  }
+  .album {
+      width: 100%;
+  }
+.album #group, #album-1, #album-2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
 }
 
+
+div.image:hover {
+    border: 1px solid #F4CB89;
+}
 
  footer a {
     text-decoration: none;
@@ -329,10 +332,9 @@ div.image:hover {
 
     }
 }
-@media screen and (max-width: 900px) {
-    .gallery {
-        width: 33%;
-        margin: 6px 0;
+@media screen and (max-width: 980px) {
+    .gallery{
+        width: 32.99%;
         justify-content: space-evenly;
     }
 }
@@ -344,9 +346,12 @@ div.image:hover {
     }
 }
 
-@media screen and (max-width: 460px) {
-    .gallery {
-        width: 100%;
+@media screen and (max-width: 480px) {
+    .gallery{
+        width: fit-content ;
+    }
+    .image {
+        max-width: 440px;
     }
 }
 @media screen and (max-width:400px) {
